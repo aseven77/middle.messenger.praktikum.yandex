@@ -1,0 +1,32 @@
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__label {
+        font-size: 16px;
+        color: var(--black);
+        margin-bottom: 7px;
+        font-weight: 500;
+    }
+
+    &__control {
+        background: var(--white);
+        border: 2px solid ;
+        border-radius: 5px;
+        padding: 0 10px;
+        width: 100%;
+        height: 32px;
+        font-size: 16px;
+        transition: 0.3s;
+
+        &:focus {
+            outline: none;
+            border-color: var(--cyan);
+        }
+    }
+}
