@@ -4,7 +4,7 @@
     "description": "",
     "scripts": {
         "dev": "parcel src/*.html --open",
-        "start": "parcel build src/*.html && node ./server.js",
+        "start": "npm run build && node ./server.js",
         "build": "parcel build src/*.html"
     },
     "keywords": [],
@@ -14,6 +14,7 @@
         "@anikin/parcel-transformer-handlebars": "1.0.9",
         "@parcel/transformer-sass": "2.7.0",
         "assert": "2.0.0",
+        "eslint-config-airbnb": "^19.0.4",
         "events": "3.3.0",
         "express": "4.18.1",
         "normalize.css": "8.0.1",
@@ -23,7 +24,14 @@
         "process": "0.11.10",
         "querystring-es3": "0.2.1",
         "sass": "1.54.9",
+        "typescript": "4.8.4",
         "url": "0.11.0",
-        "util": "0.12.4"
+        "util": "0.12.4",
+        "stylelint": "14.13.0"
+    },
+    "dependencies": {
+        "@types/node": "^18.8.1",
+        "babel-core": "6.26.3",
+        "nanoid": "4.0.0"
     }
 }

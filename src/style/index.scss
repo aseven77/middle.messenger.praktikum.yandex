@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
 @import '../../node_modules/normalize.css/normalize.css';
 @import './variables';
-@import './compontents/button';
-@import '../components/input/index.scss';
-@import '../components/chat-item/index.scss';
-@import '../pages/chat-list/index.scss';
+
 
 * ,
 html,
@@ -32,6 +29,10 @@ body {
 
 .text-center {
     text-align: center !important;
+}
+
+.mb-1 {
+    margin-bottom: 10px !important;
 }
 
 img {
@@ -104,22 +105,4 @@ img {
         border-radius: 50%;
         cursor: pointer;
     }
-}
-
-.error-page {
-    text-align: center;
-
-    &__title {
-        font-weight: 1000;
-        font-size: 260px;
-        line-height: 1.25;
-        letter-spacing: 0.3em;
-        margin: 0 0 30px;
-        color: var(--white);
-    }
-}
-
-.link {
-    text-decoration-line: underline;
-    color: var(---black);
 }
