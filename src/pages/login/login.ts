@@ -1,6 +1,6 @@
 import Block from '../../core/Block';
 import passwordRecovery from '../passwordRecovery';
-import Registration from '../Registration';
+import Registration from '../registration';
 import { validationInputList, validateForm } from '../../helpers/validation';
 
 
