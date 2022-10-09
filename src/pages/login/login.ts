@@ -26,7 +26,7 @@ export class Login extends Block {
             },
 
             onRegistrationLink: () => {
-                window.currentPage.page = registration
+                window.currentPage.page = Registration
             },
 
             onRestorePasswordLink: () => {
