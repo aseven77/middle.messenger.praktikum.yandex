@@ -1,0 +1,1 @@
+export { errorServer as default } from './505';

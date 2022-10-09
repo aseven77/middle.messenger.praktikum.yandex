@@ -1,0 +1,1 @@
+export { userSettings as default } from './userSettings';
