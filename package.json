@@ -30,7 +30,7 @@
         "stylelint": "14.13.0"
     },
     "dependencies": {
-        "@types/node": "^18.8.1",
+        "@types/node": "18.8.1",
         "babel-core": "6.26.3",
         "nanoid": "4.0.0"
     }

@@ -1,9 +1,9 @@
 import { log } from "console";
 import Block from '../../core/Block';
-import passwordChange from "../passwordChange";
+import PasswordChange from "../PasswordChange";
 import { validationInputList, validateForm } from '../../helpers/validation';
 
-export class userSettings extends Block {
+export class UserSettings extends Block {
     constructor() {
         super()
         this.setProps({
@@ -63,7 +63,7 @@ export class userSettings extends Block {
 
 
             onPasswordChangeLink: () => {
-                window.currentPage.page = passwordChange
+                window.currentPage.page = PasswordChange
             }
         })
     }

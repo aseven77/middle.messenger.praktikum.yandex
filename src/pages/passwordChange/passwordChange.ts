@@ -3,7 +3,7 @@ import Block from '../../core/Block';
 import passwordRecovery from "../passwordRecovery";
 import { validationInputList, validateForm } from '../../helpers/validation';
 
-export class passwordChange extends Block {
+export class PasswordChange extends Block {
     constructor() {
         super()
         this.setProps({

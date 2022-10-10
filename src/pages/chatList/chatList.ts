@@ -6,7 +6,7 @@ import './index.scss';
 
 import * as avatar from '../../img/avatar.png';
 
-export class chatList extends Block {
+export class ChatList extends Block {
     constructor() {
         super()
         this.setProps({
