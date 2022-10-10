@@ -1,6 +1,6 @@
 import { log } from "console";
 import Block from '../../core/Block';
-import PasswordChange from "../PasswordChange";
+import PasswordChange from "../passwordChange";
 import { validationInputList, validateForm } from '../../helpers/validation';
 
 export class UserSettings extends Block {
