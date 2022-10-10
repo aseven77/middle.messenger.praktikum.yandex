@@ -17,3 +17,7 @@ Netlify - https://peppy-cendol-4e4544.netlify.app/
 ```bash
     npm run build
 ```
+
+Ссылка на PR
+
+https://github.com/aseven77/middle.messenger.praktikum.yandex/pull/4

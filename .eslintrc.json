@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "prettier",
+        "airbnb"
+    ],
+    "rules": {
+        "no-unused-vars": 2,
+        "max-len": [
+            1,
+            100
+        ],
+        "max-params": [
+            "error",
+            3
+        ]
+    },
+    "env": {
+        "browser": true
+    }
+}

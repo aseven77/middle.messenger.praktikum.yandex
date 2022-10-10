@@ -1,9 +1,8 @@
-import { log } from "console";
 import Block from '../../core/Block';
 import passwordRecovery from "../passwordRecovery";
 import { validationInputList, validateForm } from '../../helpers/validation';
 
-export class passwordChange extends Block {
+export class PasswordChange extends Block {
     constructor() {
         super()
         this.setProps({
@@ -14,15 +13,16 @@ export class passwordChange extends Block {
             onInput: (e: FocusEvent) => {
 
                 const inputEl = e.target as HTMLInputElement
+                const nextElSibling = inputEl.nextElementSibling as HTMLInputElement
 
 
                 const errorMessage = validateForm([{ type: inputEl.name, value: inputEl.value }]);
 
                 if (!errorMessage?.text) {
-                    inputEl.nextElementSibling.textContent = ""
+                    nextElSibling.textContent = ""
                 }
 
-                inputEl.nextElementSibling.textContent = errorMessage?.text
+                nextElSibling.textContent = errorMessage?.text
 
             },
 

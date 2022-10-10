@@ -1,7 +1,7 @@
 require('babel-core/register');
 import { renderDOM, registerComponent } from './core';
 import './pages/404/index.scss';
-import userSettings from './pages/userSettings';
+import UserSettings from './pages/userSettings';
 
 import "./style/index.scss";
 
@@ -16,12 +16,12 @@ registerComponent(Input);
 registerComponent(Error);
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderDOM(new userSettings());
+    renderDOM(new UserSettings());
 });
 
 
 window.currentPage = new Proxy(
-    { page: "userSettings" },
+    { page: "UserSettings" },
     {
         get(target: any, prop) {
             const value: any = target[prop]

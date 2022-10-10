@@ -1,7 +1,7 @@
 require('babel-core/register');
 import { renderDOM, registerComponent } from './core';
 import './pages/404/index.scss';
-import chatList from './pages/chatList';
+import ChatList from './pages/chatList';
 
 import "./style/index.scss";
 
@@ -18,12 +18,12 @@ registerComponent(Textarea);
 registerComponent(Error);
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderDOM(new chatList());
+    renderDOM(new ChatList());
 });
 
 
 window.currentPage = new Proxy(
-    { page: "chatList" },
+    { page: "ChatList" },
     {
         get(target: any, prop) {
             const value: any = target[prop]
