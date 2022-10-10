@@ -1,7 +1,7 @@
 require('babel-core/register');
 import { renderDOM, registerComponent } from './core';
 import './pages/404/index.scss';
-import UserSettings from './pages/UserSettings';
+import UserSettings from './pages/userSettings';
 
 import "./style/index.scss";
 
