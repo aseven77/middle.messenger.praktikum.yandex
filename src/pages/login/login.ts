@@ -13,18 +13,18 @@ export class Login extends Block {
             onInput: (e: FocusEvent) => {
 
                 const inputEl = e.target as HTMLInputElement
+                const nextElSibling = inputEl.nextElementSibling as HTMLInputElement
 
 
                 const errorMessage = validateForm([{ type: inputEl.name, value: inputEl.value }]);
 
                 if (!errorMessage?.text) {
-                    inputEl.nextElementSibling.textContent = ""
+                    nextElSibling.textContent = ""
                 }
 
-                inputEl.nextElementSibling.textContent = errorMessage?.text
+                nextElSibling.textContent = errorMessage?.text
 
             },
-
             onRegistrationLink: () => {
                 window.currentPage.page = Registration
             },
