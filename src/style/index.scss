@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+@import '../../node_modules/normalize.css/normalize.css';
+@import './variables';
+
+
+* ,
+html,
+body {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cyan);
+    font-family: var(--base-font-family);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.mb-1 {
+    margin-bottom: 10px !important;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    max-width: 652px;
+    margin: 0 auto;
+    background: #F6F8FA;
+    border: 1px solid #D0D7DE;
+    border-radius: 5px;
+    padding: 35px 0;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--black);
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.form-chat {
+    padding: 0 81px;
+
+    &__btn {
+        margin: 0 auto 10px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.avatar {
+    max-width: 100px;
+    margin: 0 auto 20px;
+    width: 100%;
+    position: relative;
+    display: block;
+
+    &__picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__control {
+        display: none;
+    }
+
+    &__edit {
+        width: 40px;
+        height: 40px;
+        background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='23' viewBox='0 0 16 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.7846 14.6591C15.4983 14.3787 15.0333 14.378 14.747 14.6591L8.73366 20.5484V0.71881C8.73366 0.322 8.40518 0 7.99969 0C7.59419 0 7.26572 0.32206 7.26572 0.71881V20.5484L1.25242 14.6598C0.966104 14.3787 0.501053 14.3787 0.214737 14.6598C-0.0715789 14.9408 -0.0715789 15.3959 0.214737 15.6762L7.48081 22.7919C7.76423 23.0694 8.23581 23.0694 8.51922 22.7919L15.7853 15.6762C16.0717 15.3951 16.0717 14.9401 15.7846 14.6591C15.4983 14.3787 16.0717 14.9401 15.7846 14.6591Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: var(--cyan);
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}

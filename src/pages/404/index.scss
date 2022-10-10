@@ -1,0 +1,12 @@
+.error-page {
+    text-align: center;
+
+    &__title {
+        font-weight: 1000;
+        font-size: 260px;
+        line-height: 1.25;
+        letter-spacing: 0.3em;
+        margin: 0 0 30px;
+        color: var(--white);
+    }
+}
